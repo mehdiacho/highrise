@@ -1,0 +1,58 @@
+#root {
+  text-align: center;
+}
+
+.board {
+   display: grid;
+  grid-template-columns: 2fr repeat(9, 1.5fr) 2fr;
+  grid-template-rows: 2fr repeat(9, 1.5fr) 2fr;
+  width: 100vmin;   /* makes it a square */
+  height: 100vmin;
+  border: 4px solid black;
+  background: #3c0e98;
+  position: relative;
+}
+
+
+
+
+
+.center{
+  border-radius: 6px;
+  grid-column: 3 / 10;
+  grid-row: 3 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background: #dfe8d8;
+  border: 2px solid #000;
+}
+
+
+.lot {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 0.6rem;
+  text-align: center;
+  background: #fff;
+}
+
+.property::before {
+  content: "";
+  display: block;
+  height: 20%;
+  width: 100%;
+}
+
+.property.brown::before { background: #8b4513; }
+.property.lightblue::before { background: #87ceeb; }
+.property.pink::before { background: #ff69b4; }
+.property.orange::before { background: #ffa500; }
+.property.red::before { background: #ff0000; }
+.property.yellow::before { background: #ffff00; }
+.property.green::before { background: #008000; }
+.property.darkblue::before { background: #00008b; }
