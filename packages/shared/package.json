@@ -1,0 +1,28 @@
+{
+  "name": "@richup/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts",
+    "./wire": "./src/wire.ts",
+    "./engine/reduce": "./src/engine/reduce.ts",
+    "./engine/rules": "./src/engine/rules.ts",
+    "./bot": "./src/bot.ts",
+    "./data/default-map": "./src/data/default-map.json"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "vitest": "^1.4.0"
+  }
+}

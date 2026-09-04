@@ -1,0 +1,20 @@
+# Richup game server — deploy on the DXP2800 NAS.
+# Homelab conventions: no `version:` field, joins the shared external `homelab`
+# bridge so NPM can reach it by container name, exposes a fallback host port,
+# restart: unless-stopped, TZ set. Build context is this repo (see Dockerfile).
+services:
+  richup:
+    build: .
+    container_name: richup
+    restart: unless-stopped
+    ports:
+      - "8100:3001" # fallback direct access → 192.168.0.2:8100
+    environment:
+      TZ: "Africa/Gaborone"
+      PORT: "3001"
+      WEB_ROOT: "/app/apps/web/dist"
+
+networks:
+  default:
+    name: homelab
+    external: true

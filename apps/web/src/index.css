@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    color: theme('colors.ink.DEFAULT');
+    font-family: theme('fontFamily.sans');
+    /* Deep table with a soft central glow */
+    background:
+      radial-gradient(120% 90% at 50% 0%, #16203c 0%, rgba(22, 32, 60, 0) 55%),
+      radial-gradient(90% 70% at 50% 100%, #0d1428 0%, rgba(13, 20, 40, 0) 60%),
+      theme('colors.table.900');
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Slim, dark scrollbars to match the table */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.table.600') transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: theme('colors.table.600');
+    border-radius: 9999px;
+  }
+}
+
+@layer components {
+  /* Frosted glass surface used for every panel */
+  .glass {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
