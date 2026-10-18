@@ -3,7 +3,7 @@
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    padding: 2rem;
+    padding: 0;
     box-sizing: border-box;
     background-image: url('../assets/images/k1RrqHpC.png'); /* Add the background */
     background-position: bottom center;
@@ -90,4 +90,11 @@
 
 .home-footer a:hover {
     color: #b3a3f0;
+}
+
+input {
+    color: #2d2445;
+    background-color: #2d2445;
+    border-radius: 5px;
+    border: none;
 }

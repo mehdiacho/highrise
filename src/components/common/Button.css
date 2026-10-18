@@ -1,5 +1,5 @@
 /* Base button styles */
-.richup-button {
+.button {
     background-color: #6647e0;
     background-image: linear-gradient(to top left, #6647e0, #8c47e0);
     color: #fff;
@@ -19,7 +19,7 @@
 }
 
 /* Hover effect */
-.richup-button:before {
+.button:before {
     content: "";
     position: absolute;
     top: 0;
@@ -31,37 +31,47 @@
     opacity: 0;
 }
 
-.richup-button:hover:before {
+.button:hover:before {
     transition: 0.12s;
     opacity: 0.1;
 }
 
-.richup-button .button-content {
+.button .button-content {
     z-index: 1;
     display: flex;
     align-items: center;
 }
 
 /* Disabled state */
-.richup-button:disabled {
+.button:disabled {
     cursor: auto;
     opacity: 0.6667;
     filter: grayscale(0.5);
 }
 
 /* Secondary variant */
-.richup-button-secondary {
-    background-color: #4e2f86;
+.button-secondary {
     background-image: linear-gradient(to top left, #4e2f86, #642f86);
     color: #edeaf3;
 }
 
-.richup-button-secondary:hover {
+.button-secondary:hover {
     color: #fff;
 }
 
 /* Small size variant */
-.richup-button-small {
+.button-small {
     font-size: 0.875em;
     padding: var(--button-padding-block, 0.5em) var(--button-padding-inline, 0.75em);
+}
+/* Medium size variant */
+.button-medium {
+    font-size: 1em;
+    padding: var(--button-padding-block, 0.75em) var(--button-padding-inline, 1em);
+}
+
+/* Large size variant */
+.button-large {
+    font-size: 1.125em;
+    padding: var(--button-padding-block, 1em) var(--button-padding-inline, 1.5em);
 }

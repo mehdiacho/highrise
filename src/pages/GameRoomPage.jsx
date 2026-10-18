@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import './GameRoomPage.css';
 
 // Import placeholder components
-import Board from '../components/game/Board';
+import Board from '../components/Board';
 import PlayerList from '../components/game/PlayerList';
 import ChatBox from '../components/game/ChatBox';
 import ActionPanel from '../components/game/ActionPanel';
@@ -14,16 +14,16 @@ const GameRoomPage = () => {
 
     return (
         <div className="gameroom-container">
-            <div className="left-panel">
+            {/* <div className="left-panel">
                 <PlayerList />
-            </div>
+            </div> */}
             <div className="center-panel">
                 <Board />
             </div>
-            <div className="right-panel">
+            {/* <div className="right-panel">
                 <ChatBox />
                 <ActionPanel />
-            </div>
+            </div> */}
         </div>
     );
 };

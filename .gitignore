@@ -15,7 +15,8 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/*
+!.idea/rcb-settings.xml
 .DS_Store
 *.suo
 *.ntvs*
@@ -28,3 +29,6 @@ dist-ssr
 
 #config files
 package-lock.json
+
+*storybook.log
+storybook-static

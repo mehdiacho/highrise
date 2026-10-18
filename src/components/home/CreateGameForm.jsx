@@ -1,21 +1,27 @@
-import { Link } from 'react-router-dom';
 import './CreateGameForm.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import PropTypes from 'prop-types';
 
-const CreateGameForm = () => {
-    // A Link component that navigates to a new game room
-    // The room ID 'newgame' is a placeholder; in a real app,
-    // you would generate a unique ID.
+export const CreateGameForm = ({
+    backgroundColor = null,
+    ...props
+}) => {
+    
     return (
-        <div className="create-game-form">
-            <h2>Create a New Game</h2>
-            <div className="form-options">
+        <form className="create-game-form" style={backgroundColor && { backgroundColor }} {...props}>
+            <div className="form-options mb-2">
                 {/* Add form inputs for game settings here */}
+                <input type="text" className="form-control text-bg-dark border-dark" placeholder="Enter Game Name"/>
             </div>
-            <Link to="/room/newgame" className="start-game-button">
+            <a type='button' className="  btn-lg w-100 bi bi-chevron-double-right join-button border-dark" href="/room/newgame" role='button' >
                 Start Game
-            </Link>
-        </div>
+            </a>
+        </form>
     );
 };
 
-export default CreateGameForm;
+CreateGameForm.propTypes = {
+    backgroundColor: PropTypes.string,
+}
+
+
