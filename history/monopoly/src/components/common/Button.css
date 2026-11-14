@@ -1,0 +1,77 @@
+/* Base button styles */
+.button {
+    background-color: #6647e0;
+    background-image: linear-gradient(to top left, #6647e0, #8c47e0);
+    color: #fff;
+    border: 0;
+    border-radius: 0.25em;
+    margin: 0.25em;
+    line-height: 1em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s;
+    word-break: break-word;
+    user-select: none;
+    padding: var(--button-padding-block, 0.75em) var(--button-padding-inline, 1em);
+}
+
+/* Hover effect */
+.button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--button-hover-highlight-color, white);
+    transition: inherit;
+    opacity: 0;
+}
+
+.button:hover:before {
+    transition: 0.12s;
+    opacity: 0.1;
+}
+
+.button .button-content {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Disabled state */
+.button:disabled {
+    cursor: auto;
+    opacity: 0.6667;
+    filter: grayscale(0.5);
+}
+
+/* Secondary variant */
+.button-secondary {
+    background-image: linear-gradient(to top left, #4e2f86, #642f86);
+    color: #edeaf3;
+}
+
+.button-secondary:hover {
+    color: #fff;
+}
+
+/* Small size variant */
+.button-small {
+    font-size: 0.875em;
+    padding: var(--button-padding-block, 0.5em) var(--button-padding-inline, 0.75em);
+}
+/* Medium size variant */
+.button-medium {
+    font-size: 1em;
+    padding: var(--button-padding-block, 0.75em) var(--button-padding-inline, 1em);
+}
+
+/* Large size variant */
+.button-large {
+    font-size: 1.125em;
+    padding: var(--button-padding-block, 1em) var(--button-padding-inline, 1.5em);
+}

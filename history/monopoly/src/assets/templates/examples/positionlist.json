@@ -1,0 +1,74 @@
+{
+  "properties": {
+    "brown": {
+      "1": "Mediterranean Avenue",
+      "2": "Baltic Avenue"
+    },
+    "light_blue": {
+      "1": "Oriental Avenue",
+      "2": "Vermont Avenue",
+      "3": "Connecticut Avenue"
+    },
+    "pink": {
+      "1": "St. Charles Place",
+      "2": "States Avenue",
+      "3": "Virginia Avenue"
+    },
+    "orange": {
+      "1": "St. James Place",
+      "2": "Tennessee Avenue",
+      "3": "New York Avenue"
+    },
+    "red": {
+      "1": "Kentucky Avenue",
+      "2": "Indiana Avenue",
+      "3": "Illinois Avenue"
+    },
+    "yellow": {
+      "1": "Atlantic Avenue",
+      "2": "Ventnor Avenue",
+      "3": "Marvin Gardens"
+    },
+    "green": {
+      "1": "Pacific Avenue",
+      "2": "North Carolina Avenue",
+      "3": "Pennsylvania Avenue"
+    },
+    "dark_blue": {
+      "1": "Park Place",
+      "2": "Boardwalk"
+    }
+  },
+  "utilities": {
+    "1": "Electric Company",
+    "2": "Water Works"
+  },
+  "transport": {
+    "1": "Reading Railroad",
+    "2": "Pennsylvania Railroad",
+    "3": "B&O Railroad",
+    "4": "Short Line"
+  },
+  "chance_community_tax": {
+    "chance": {
+      "1": "Chance",
+      "2": "Chance",
+      "3": "Chance"
+    },
+    "community_chest": {
+      "1": "Community Chest",
+      "2": "Community Chest",
+      "3": "Community Chest"
+    },
+    "taxes": {
+      "1": "Income Tax",
+      "2": "Luxury Tax"
+    }
+  },
+  "corners": {
+    "1": "Go",
+    "2": "Jail / Just Visiting",
+    "3": "Free Parking",
+    "4": "Go to Jail"
+  }
+}

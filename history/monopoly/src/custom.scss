@@ -1,0 +1,21 @@
+// Import Bootstrap’s required Sass utilities first
+@import "bootstrap/scss/functions";
+
+@import "bootstrap/scss/variables";
+// Extend Bootstrap’s theme colors
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "indigo": $indigo,
+    "teal": $teal,
+    "pink": $pink
+  )
+);
+
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+
+// Import the rest of Bootstrap
+@import "bootstrap/scss/bootstrap";
